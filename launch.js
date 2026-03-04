@@ -22,7 +22,7 @@ function SPLStartGame(onSuccess, onError) {
 
   function getDomain(callback) {
     var xhr = new XMLHttpRequest();
-    var url = 'https://raw.githubusercontent.com/spltdev/game-launch-staging/refs/heads/main/domain.txt'
+    var url = 'https://raw.githubusercontent.com/spltdev/game-launch-prod/refs/heads/main/domain.txt'
 
     xhr.open('GET', url + '?t=' + (new Date).getTime(), true);
     xhr.timeout = 30000;
